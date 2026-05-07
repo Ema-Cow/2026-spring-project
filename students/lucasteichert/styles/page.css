@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: black;
+
+  p {
+    background-color: white;
+  }
+
+  h1 {
+    background-color: white;
+  }
+
+  b {
+    background-color: white;
+  }
+
+  h2 {
+    background-color: white;
+  }
+
+  /* TODO Add dark mode styles here. */
+}
+
+.light-mode {
+  /* TODO Add light mode styles here. */
+  background-color: aliceblue;
+  color: blue;
+}
+
+.center {
+  width: 940px;
+  padding: 20px;
+  border: 1px dotted white;
+  margin-right: auto;
+  margin-left: auto;
+  /* TODO Add margins to center. */
+}
+
+.poem {
+  text-align: center;
+}
+
+footer {
+  /* TODO Add styles */
+  background-color: aliceblue;
+}
+
+.light-mode footer {
+  /* TODO Add footer light mode styles here. */
+}
+
+#calculator{
+  background-image: url(../images/yuji\ zazu\ cat.jpeg);
+  border-width: 4px;
+  border-color: #01ff62;
+  border-style: solid;
+  min-width: 200px;
+ display: inline-block;
+}
+
+#counter {
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
+  font-size: 24px;
+margin: 30spx;
+padding: 10px;
+}
+
+#calculator-buttons {
+  border-width: 5px;
+  border-color: red;
+  border-style: solid;
+}
+
+button {
+  min-width: 20px;
+padding: 10px;
+}
