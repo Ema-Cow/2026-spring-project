@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background-color: black;
+    color: black;
+    background-image: url(../images/red2.jpg);
+}
+
+.light-mode {
+    background-color: azure;
+    color: black;
+    background-image: url(../images/blue2.jpg);
+}
+
+.center {
+    width: 940px;
+    padding: 20px;
+    border: 1px dotted white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poem {
+    text-align: left;
+}
+
+footer {
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(23, 22, 31), rgb(48, 48, 48));
+}
+
+.light-mode footer {
+    background-color: black;
+    color: aqua;
+}
+
+.font {
+    font-family: "Sekuya", system-ui;
+}
