@@ -15,7 +15,7 @@ body {
 }
 
 .center {
-    max-width: 940px;
+    max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -59,7 +59,7 @@ button {
 }
 
 header {
-    background-image: linear-gradient(to bottom, darkslategrey, darkslateblue);
+    background-image: linear-gradient(to bottom, darkslateblue, darkslategrey);
 }
 
 .tab {
@@ -80,11 +80,23 @@ header {
     padding: 0px;
 }
 
-
 .light-mode .tab{
     border-color: rgb(0, 0, 0);
 }
 
 .light-mode .underline{
     border-color: rgb(0, 0, 0);
+}
+
+a {
+    color: white;
+}
+
+.light-mode a{
+    color: black;
+}
+
+main{
+    min-height: 50vh;
+    background-color: aliceblue/0.1;
 }
