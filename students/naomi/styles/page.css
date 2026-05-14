@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background-color: rgb(184, 223, 246);
+    color: rgb(172, 164, 165);
+}
+
+.light-mode {
+    background-color: rgb(109, 145, 177);
+    color: rgb(240, 240, 254);
+}
+
+.center {
+    width: 940px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poem {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(136, 137, 134);
+    padding: 10px;
+    text-align: center;
+}
+
+.light-mode footer {
+    /* TODO Add footer light mode styles here. */
+}
+
+.example {
+    border: 15px solid rgb(187, 185, 185);
+    padding: 20px;
+    width: 200px;
+}
+
+.big {
+    font-size: 45px;
+}
+
+.line {
+    display: flex;
+    gap: 20px;
+    justify-content:
+        space-between;
+    align-items: center;
+}
+
+.underline {
+    border-bottom: 1px solid white;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    border-bottom: 1px solid white;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.light-mode .underline {
+    border-color: black;
+}
+
+.tab {
+    display: inline-block;
+    border: 1px solid white;
+    border-bottom: none;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.light-mode .tab {
+    border-color: black;
+}
+
+a {
+    color: rgb(82, 85, 87);
+}
+
+.light-mode a {
+    color: rgb(237, 228, 228);
+}
+
+main {
+    min-height: 50vh;
+    background-color: rgba(137, 244, 252, 0.878);
+}

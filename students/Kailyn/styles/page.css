@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background: black;
+  color: azure;
+  /* TODO Add dark mode styles here. */
+  font-family: "Bitcount Grid Double", system-ui;
+  font-family: "Saira Stencil", sans-serif;
+  font-family: "Sekuya", system-ui;
+  font-family: "Cause", cursive;
+
+
+  i {
+    box-shadow: 10px 5px 5px 0 rgb(65, 75, 118);
+  }
+}
+
+h1 {
+  font-family: "BJ Cree", serif;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-family: "Saira Stencil", sans-serif;
+}
+
+.light-mode h1 {
+  font-family: "BJ Cree", serif;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-family: "Saira Stencil", sans-serif;
+  box-shadow: 10px 5px 5px 0 rgb(0, 0, 0);
+}
+
+button {
+  background-color: rgb(76, 76, 76);
+  color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px 0 rgb(212, 212, 212);
+
+}
+
+.light-mode button {
+  background-color: rgb(35, 35, 35);
+  color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px 0 rgb(0, 0, 0);
+}
+
+.light-mode {
+  padding: 20px;
+  background: rgb(184, 190, 249);
+  color: rgb(0, 0, 0);
+  /* TODO Add light mode styles here. */
+}
+
+.center {
+  max-width: 1000px;
+  padding: 20px;
+  /* TODO Add margins to center. */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+footer {
+  /* TODO Add styles */
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to top, rgb(59, 42, 167), rgb(22, 133, 133));
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.light-mode footer {
+  /* TODO Add footer light mode styles here. */
+  color: rgb(111, 27, 132);
+  background-image: linear-gradient(to left, rgb(178, 170, 228), rgb(137, 222, 222));
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.big {
+  font-size: 40px;
+
+}
+
+.line {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border: none
+}
+
+.underline {
+  border-bottom: 1px solid white;
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+.light-mode .underline {
+  border-bottom: 1px solid black;
+  margin-bottom: 0px;
+}
+
+.tab {
+  border: 1px solid white;
+  display: inline-block;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: none;
+}
+
+.light-mode .tab {
+  border-color: black;
+}
+
+a {
+  color: white
+}
+
+.light-mode a {
+  color: black;
+}
+
+main {
+  min-height: 300px;
+}
