@@ -195,7 +195,7 @@ body::after {
     top: 0;
     width: 150px; /* 圖片的寬度，你可以根據圖片大小調整 */
     height: 100%;
-    background-image: url("../images/Portrait.reze.png");
+    background-image: url("./images/thumb-1920-551673.png");
     background-repeat: repeat-y; /* 垂直重複鋪滿 */
     background-size: contain; /* 確保圖片比例正確 */
     z-index: -1; /* 放在最底層，不會擋到文字 */
@@ -211,3 +211,6 @@ body::before {
 body::after {
     right: 0;
 }
+
+
+
