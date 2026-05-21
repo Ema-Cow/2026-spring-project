@@ -89,3 +89,7 @@ border-top-right-radius: 10px;
 .light-mode .tab{
   border-color:black
 }
+
+main {
+  display: flow-root;
+}
