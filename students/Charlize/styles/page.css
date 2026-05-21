@@ -20,6 +20,7 @@ button {font-family: "Caveat", cursive;
 }
 
 main {
+  display: flow-root;
   min-height: 50vh;
   background-color: black;
 }
