@@ -42,8 +42,16 @@
     </header>
     <main class="center">
       <h1>My Dog: Puddles</h1>
+
       <div class="dog-picture">
-        <img src="./images/not-my-dog.jpg" width="400" />
+        <div class="art-frame">
+          <img class="art" src="./images/not-my-dog.jpg" width="400" />
+          <canvas id="my-graffiti" width="400" height="400">
+          </canvas>
+        </div>
+        <button id="clean">
+          Clean graffiti
+        </button>
       </div>
 
       <p>
@@ -65,7 +73,6 @@
         pace. If he wants to get to a place quicker, he will instead just walk
         faster.
       </p>
-      
     </main>
     <footer>
       <div class="center">
