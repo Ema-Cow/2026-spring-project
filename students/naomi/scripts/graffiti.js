@@ -5,17 +5,29 @@
 const graffitiCanvas = document.getElementById('my-graffiti');
 const surface = graffitiCanvas.getContext("2d");
 const cleanButton = document.getElementById("clean");
+const colorInput = document.getElementById("color-input");
+const sizeInput = document.getElementById("size-input");
 
 /*
  *Graffiti style.
  */
-surface.lineWidth = 13
+function changeSize() {
+    surface.lineWidth = sizeInput.value;
+}
+changeSize();
+sizeInput.addEventListener("change", changeSize);
+
 surface.lineJoin = "round";
-surface.strokeStyle = "red";
+// surface.strokeStyle = "red";
+function changeColor() {
+    surface.strokeStyle = colorInput.value;
+}
+changeColor();
+colorInput.addEventListener("change", changeColor);
 
 /*
-*Shapes
-*/
+ *Shapes
+ */
 function shapes() {
     surface.rect(150, 200, 100, 100);
     surface.stroke();
@@ -54,12 +66,12 @@ function graffiti(event) {
     const y = event.offsetY;
     console.log(x, y, event.buttons);
 
-    if(event.buttons === 1){
-    surface.beginPath();
-    surface.moveTo(oldX, oldY);
-    surface.lineTo(x, y);
-    surface.closePath();
-    surface.stroke();
+    if (event.buttons === 1) {
+        surface.beginPath();
+        surface.moveTo(oldX, oldY);
+        surface.lineTo(x, y);
+        surface.closePath();
+        surface.stroke();
     }
     oldX = x;
     oldY = y;
