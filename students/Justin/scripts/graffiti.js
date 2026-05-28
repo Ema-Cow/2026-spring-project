@@ -4,14 +4,27 @@
 const graffitiCanvas = document.getElementById("my-graffiti");
 const surface = graffitiCanvas.getContext("2d");
 const cleanButton = document.getElementById("clean");
+const colorInput = document.getElementById("color-input");
+const sizeInput = document.getElementById("size-input");
+
 /*
 * Graffiti style.
 */
 
-surface.lineWidth = 13;
+surface.lineWidth = sizeInput.value;
 surface.lineJoin = "round";
-surface.strokeStyle = "red";
+surface.strokeStyle = colorInput.value;
+function changeColor(){
+    surface.strokeStyle = colorInput.value
+}
+changeColor();
+colorInput.addEventListener("change",changeColor);
 
+function changeSize(){
+    surface.lineWidth = sizeInput.value;
+}
+changeSize();
+sizeInput.addEventListener("change",changeSize)
 /*
 * Shapes
 */
