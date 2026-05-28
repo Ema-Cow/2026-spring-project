@@ -4,14 +4,15 @@
 const graffitiCanvas = document.getElementById("my-graffiti");
 const surface = graffitiCanvas.getContext("2d");
 const cleanButton = document.getElementById("clean");
-
+const colorInput = document.getElementById("color-input");
+const sizeInput = document.getElementById("size-input");
 
 /*
 *  Graffiti Styles
 */
-surface.lineWidth = 13;
+surface.lineWidth = sizeInput.value;
 surface.lineJoin = "round";
-surface.strokeStyle = "red";
+surface.strokeStyle = colorInput.value;
 
 
 
@@ -53,18 +54,29 @@ cleanButton.addEventListener("click", cleanCanvas);
 let oldX = 0;
 let oldY = 0;
 
+function changeColor() {
+    surface.strokeStyle = colorInput.value;
+
+}
+
+function changeSize() {
+   
+    surface.lineWidth = sizeInput.value;
+}
+
 function graffiti(event) {
 
     const x = event.offsetX;
     const y = event.offsetY;
     console.log(x, y, event.buttons);
+    
 
-    if (event.buttons > 0){
-    surface.beginPath();
-    surface.moveTo(oldX, oldY);
-    surface.lineTo(x, y);
-    surface.closePath();
-    surface.stroke();
+    if (event.buttons > 0) {
+        surface.beginPath();
+        surface.moveTo(oldX, oldY);
+        surface.lineTo(x, y);
+        surface.closePath();
+        surface.stroke();
     }
 
     oldX = x;
@@ -73,3 +85,7 @@ function graffiti(event) {
 }
 
 graffitiCanvas.addEventListener("mousemove", graffiti);
+colorInput.addEventListener("change", changeColor);
+sizeInput.addEventListener("change", changeSize);
+
+console.log(colorInput.value);
