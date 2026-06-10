@@ -1,7 +1,7 @@
 /**
  * An eraser for a Canvas element when drawing in 2D.
  */
-class canvasEraser {
+class CanvasEraser {
   /**
    * The 2D context of a Canvas element.
    *
