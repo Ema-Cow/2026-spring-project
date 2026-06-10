@@ -1,3 +1,6 @@
+
+
+
 /*
 * HTML Elements
 */
@@ -74,7 +77,10 @@ function graffiti(event) {
     if (event.buttons > 0) {
         if (tool === "eraser") {
             const width = sizeInput.value;
-            surface.clearRect(x,y,width,width);
+            const halfWidth = 0.5 * width;
+            const leftX = x - halfWidth;
+            const upY = y - halfWidth;
+            surface.clearRect(leftX,upY,width,width);
 
         } else {
             surface.beginPath();
