@@ -42,13 +42,9 @@ a {
   text-align: left;
 }
 
-footer {
+.date {
   background-image: linear-gradient(to bottom, rgb(227, 227, 227), rgb(229, 229, 229));
   
-}
-
-.light-mode footer {
-  background-image: linear-gradient(to bottom, rgb(243, 243, 243), rgb(225, 225, 225));
 }
 
 .dark-mode {
@@ -61,7 +57,7 @@ footer {
 .dark-mode p{
   color: rgb(216, 216, 216);
 }
-.dark-mode footer{
+.dark-mode .date{
   background-image: linear-gradient(to bottom, rgb(33, 33, 33), rgb(16, 16, 16));
 }
 
@@ -114,4 +110,15 @@ main{
   width: 100px;
   border: 3px solid white;
   border-radius: 20px;
+}
+.dataP{
+  border: 1px solid white;
+  border-radius: 20px;
+  margin: 10px;
+}
+.dataF{
+  margin-left: 15px;
+}
+.dark-mode .dataF p{
+  color: rgb(245, 245, 245);
 }
