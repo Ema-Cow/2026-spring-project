@@ -1,17 +1,18 @@
+import { CanvasEraser } from "../../../scripts/canvas-eraser.js";
+
 /*
 *HTML element
 */
 const gCanvas = document.getElementById("graffiti");
 const surface = gCanvas.getContext("2d");
+const eraser = new CanvasEraser(surface)
 //const cbutton = document.getElementById("clean");
 const colinput = document.getElementById("colinput");
 const siinput = document.getElementById("siinput");
 const tselect = document.getElementById("tselect");
-console.log(tselect)
 
 surface.lineJoin = "round";
 //surface.strokeStyle = "gray"
-console.log(colinput.value);
 function changeColor(){
 surface.strokeStyle=colinput.value;
 }
@@ -21,7 +22,6 @@ colinput.addEventListener("change", changeColor);
 let tool;
 function changeTool(){
 tool=tselect.value;
-console.log(tool);
 }
 changeTool();
 tselect.addEventListener("change", changeTool);
@@ -66,10 +66,9 @@ function g(event){
     
 
     if(event.buttons > 0){
-        console.log(x, y, tool);
         if(tool ==="eraser"){
-            const width = siinput.value;
-            surface.clearRect(x - (width / 2), y - (width / 2), width, width);
+            const radius = siinput.value /2;
+            eraser.circle(x, y, radius);
         }else{
 
     surface.beginPath();

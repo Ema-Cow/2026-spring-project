@@ -7,6 +7,7 @@ h1 {
   box-shadow: 10px 5px 5px 0 rgba(219, 219, 219, 0.838);
   color: rgb(160, 160, 160);
   background-color: rgb(230, 230, 230);
+  padding: 7px;
 }
 button {
   border-radius: 5px;
@@ -15,7 +16,7 @@ button {
 body {
   padding: 20px;
   background-color: black;
-  color: aliceblue;
+  color: rgb(245, 245, 245);
 }
 
 a {
@@ -35,7 +36,9 @@ a {
 .center {
   width: 940px;
   padding: 20px;
-  margin: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .poem {
@@ -68,7 +71,7 @@ a {
   display:flex;
   gap: 15px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .underline {
   display: flex;
@@ -97,8 +100,8 @@ a {
 }
 main{
   min-height: 50vh;
-  background-color: rgb(247, 247, 247);
-  border: 3px solid rgb(246, 246, 246);
+  background-color: rgb(240, 239, 239);
+  border: 3px solid rgb(241, 241, 241);
   border-radius: 15px;
   display: flow-root;
 }
@@ -107,18 +110,48 @@ main{
   border: 3px solid rgb(68, 68, 68);
 }
 .ccc{
-  width: 100px;
+  width: 150px;
   border: 3px solid white;
   border-radius: 20px;
+
 }
+.dark-mode .ccc{
+  border: 3px solid rgb(35, 35, 35);
+}
+
 .dataP{
   border: 1px solid white;
   border-radius: 20px;
   margin: 10px;
+  width: 500px;
 }
 .dataF{
   margin-left: 15px;
 }
+
 .dark-mode .dataF p{
   color: rgb(245, 245, 245);
+}
+b{
+  color: rgb(87, 87, 87);
+}
+.dark-mode b{
+  color: rgb(223, 223, 223);
+}
+.me{
+  float: right;
+  width: 200px;
+  margin-left: 20px;
+  border: 3px solid rgb(238, 238, 238);
+  border-radius: 15px;
+}
+figure{
+  margin: 0;
+  margin-top: 20;
+  margin-bottom: 20px;
+  border: 3px solid gray;
+  padding: 3px;
+}
+figcaption{
+  font-weight: bold;
 }
