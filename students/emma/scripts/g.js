@@ -1,4 +1,5 @@
 import { CanvasEraser } from "../../../scripts/canvas-eraser.js";
+import { StickyClickyImage } from "../../../scripts/sticky-clicky-image.js";
 
 /*
 *HTML element
@@ -6,6 +7,8 @@ import { CanvasEraser } from "../../../scripts/canvas-eraser.js";
 const gCanvas = document.getElementById("graffiti");
 const surface = gCanvas.getContext("2d");
 const eraser = new CanvasEraser(surface)
+const sticky = new StickyClickyImage("mustache");
+sticky.setContainerID("dog-picture")
 //const cbutton = document.getElementById("clean");
 const colinput = document.getElementById("colinput");
 const siinput = document.getElementById("siinput");

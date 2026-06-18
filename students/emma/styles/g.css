@@ -1,3 +1,9 @@
+#mustache{
+  width: 110px;
+  height: auto;
+}
+
+
 .dog-picture{
   float: left;
   margin-left: 20px;
